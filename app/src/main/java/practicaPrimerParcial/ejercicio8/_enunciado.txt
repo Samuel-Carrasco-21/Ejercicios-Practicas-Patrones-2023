@@ -1,0 +1,5 @@
+Se tienen varios tipos de cajeros que realizan préstamos específicos (vivienda, negocios,
+créditos, financiamiento), pero los préstamos vienen de una única cuenta de fondos del banco,
+cuando alguien realiza el prestamos este dinero debe ser descontado de la cuenta principal
+(solamente se deposita dinero una única vez a principio de mes , luego los cajeros pueden usar
+este dinero para los préstamos) nota los cajeros pueden realizar préstamos al mismo tiempo.

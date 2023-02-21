@@ -1,0 +1,9 @@
+Se desea realizar un interpretador que traduzca directamente un user story a sintaxis
+gherkins, esto quiere decir que la descripción del user story :
+Como [ usuario ]
+Quiero [accciones]
+Para [valor de la story]
+debería ser
+Given [user]
+When [actions]
+Then [value story]

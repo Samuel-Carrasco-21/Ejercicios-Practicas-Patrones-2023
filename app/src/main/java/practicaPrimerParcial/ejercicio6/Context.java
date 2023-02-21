@@ -1,0 +1,18 @@
+package practicaPrimerParcial.ejercicio6;
+
+public class Context {
+    // protected String input = ""; // 2 + 6 - 4 + 5 - 6
+    // protected int output = 0;
+    // protected int signo = 1;
+
+    // public Context(String input){
+    //     this.input=input;
+    // }
+
+    protected String input = "";
+    protected String output = "";
+    protected String palabraClave = "";
+    public Context(String input){
+        this.input = input;
+    }
+}

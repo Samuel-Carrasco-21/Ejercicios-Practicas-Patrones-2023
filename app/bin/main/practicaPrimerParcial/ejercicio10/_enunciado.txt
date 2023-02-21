@@ -1,0 +1,5 @@
+En un sector en la carretera se tiene un control y cobro de peajes a los
+vehículos (placa,modelo, etc), este centro de control solo tiene una cabina donde se realizan
+estos pagos y el registro de los vehículos que están realizando dicho pago, el administrador
+desea revisar cuando de dinero se tiene recaudado y la información de los vehículos que
+pasaron por el peaje cuando ya se tienen unos 6 vehículos ya registrados
