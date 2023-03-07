@@ -4,21 +4,19 @@ public class Main {
     public static void main(String[] args) {
         GitHub gitHub = new GitHub();
 
-        gitHub.setMedioComunicacion(new MedioComunicacion());
-
         Git git =  new Git();
 
         Proyecto proyecto = new Proyecto();
 
         for(int i=0;i<3;i++){
             Desarrollador desarrollador = 
-            new Desarrollador(gitHub.getMedioComunicacion());
+            new Desarrollador();
 
             desarrollador.setNombre("DEV "+(i+1));
             desarrollador.setCi((i+1)*100);
 
             gitHub
-            .subscribirseRepositorio(desarrollador);
+            .attach(desarrollador);
         }
 
         proyecto.setNombre("JavaScript Code");
@@ -52,17 +50,19 @@ public class Main {
 
         System.out.println("\n<><><><><><><><><><><><>");
 
-        gitHub.getMedioComunicacion().removeAllDev();
+        while(!gitHub.getObservadores().isEmpty()){
+            gitHub.deattach(gitHub.getObservadores().lastElement());   
+        }
 
         for(int i=0;i<3;i++){
             Desarrollador desarrollador = 
-            new Desarrollador(gitHub.getMedioComunicacion());
+            new Desarrollador();
 
             desarrollador.setNombre("DEV "+((i+1)*5));
             desarrollador.setCi((i+1)*1000);
 
             gitHub
-            .subscribirseRepositorio(desarrollador);
+            .attach(desarrollador);
         }
 
         proyecto = git.getCommit(gitHub.checkoutCommit("E5001"));

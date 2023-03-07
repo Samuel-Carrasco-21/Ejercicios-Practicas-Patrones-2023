@@ -1,5 +1,5 @@
 package practicaSegundoParcial.Ejercicio5;
 
 public interface IObserver {
-    void update(String msg);
+    void update(String msg, Memento memento);
 }
