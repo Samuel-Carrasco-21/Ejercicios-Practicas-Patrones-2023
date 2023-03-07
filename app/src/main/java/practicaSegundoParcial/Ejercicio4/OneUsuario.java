@@ -10,7 +10,7 @@ public class OneUsuario extends Usuario{
     @Override
     public void messageReceived(String msg, Usuario usuario) {
         System.out.println("\n--- MENSAJE NUEVO ---");
-        System.out.println("De: ");
+        System.out.println("Para: ");
         usuario.showInfo();
         System.out.println("Contenido:\n"+msg);
     }

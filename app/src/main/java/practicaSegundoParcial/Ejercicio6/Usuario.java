@@ -1,4 +1,4 @@
-package practicaSegundoParcial.Ejercicio4;
+package practicaSegundoParcial.Ejercicio6;
 
 public abstract class Usuario {
     protected IMediator mediator;
@@ -19,14 +19,6 @@ public abstract class Usuario {
         this.ci = ci;
     }
 
-    private String grupo;
-    public String getGrupo() {
-        return grupo;
-    }
-    public void setGrupo(String grupo) {
-        this.grupo = grupo;
-    }
-
     public Usuario (IMediator mediator){
         this.mediator=mediator;
     }
@@ -35,11 +27,10 @@ public abstract class Usuario {
         System.out.println("--- USUARIO ---");
         System.out.println("Nombre: "+name);
         System.out.println("CI: "+ci);
-        System.out.println("Grupo: "+grupo);
         System.out.println("---------------");
     }
 
     public abstract void sendOneUser(String msg, Usuario usuario);
-    public abstract void sendAllGroup(String message, String grupo);
+    public abstract void sendAllGroup(String message);
     public abstract void messageReceived(String msg, Usuario usuario);
 }
